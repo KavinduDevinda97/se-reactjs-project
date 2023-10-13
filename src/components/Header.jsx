@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-script-url */
 import React from 'react'
 
 const Header = () => {
@@ -12,7 +14,7 @@ const Header = () => {
                     <a href="index.html" className="logo-small">
                         <img src="logo.png" alt="" />
                     </a>
-                    <a id="toggle_btn" href="javascript:void(0);">
+                    <a id="toggle_btn">
                     </a>
                 </div>
 
@@ -28,7 +30,7 @@ const Header = () => {
 
                     <li className="nav-item">
                         <div className="top-nav-search">
-                            <a href="javascript:void(0);" className="responsive-search">
+                            <a className="responsive-search">
                                 <i className="fa fa-search"></i>
                             </a>
                             <form action="#">
@@ -45,21 +47,21 @@ const Header = () => {
 
 
                     <li className="nav-item dropdown has-arrow flag-nav">
-                        <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0);"
+                        <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown"
                             role="button">
                             <img src="assets/img/flags/us1.png" alt="" height="20" />
                         </a>
                         <div className="dropdown-menu dropdown-menu-right">
-                            <a href="javascript:void(0);" className="dropdown-item">
+                            <a className="dropdown-item">
                                 <img src="assets/img/flags/us.png" alt="" height="16" /> English
                             </a>
-                            <a href="javascript:void(0);" className="dropdown-item">
+                            <a className="dropdown-item">
                                 <img src="assets/img/flags/fr.png" alt="" height="16" /> French
                             </a>
-                            <a href="javascript:void(0);" className="dropdown-item">
+                            <a className="dropdown-item">
                                 <img src="assets/img/flags/es.png" alt="" height="16" /> Spanish
                             </a>
-                            <a href="javascript:void(0);" className="dropdown-item">
+                            <a className="dropdown-item">
                                 <img src="assets/img/flags/de.png" alt="" height="16" /> German
                             </a>
                         </div>
@@ -67,7 +69,7 @@ const Header = () => {
 
 
                     <li className="nav-item dropdown">
-                        <a href="javascript:void(0);" className="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <a className="dropdown-toggle nav-link" data-bs-toggle="dropdown">
                             <img src="assets/img/icons/notification-bing.svg" alt="img" /> <span
                                 className="badge rounded-pill">4</span>
                         </a>
@@ -168,7 +170,7 @@ const Header = () => {
                     </li>
 
                     <li className="nav-item dropdown has-arrow main-drop">
-                        <a href="javascript:void(0);" className="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
+                        <a className="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
                             <span className="user-img"><img src="assets/img/profiles/avator1.jpg" alt="" />
                                 <span className="status online"></span></span>
                         </a>
@@ -197,7 +199,7 @@ const Header = () => {
 
 
                 <div className="dropdown mobile-user-menu">
-                    <a href="javascript:void(0);" className="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                    <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown"
                         aria-expanded="false"><i className="fa fa-ellipsis-v"></i></a>
                     <div className="dropdown-menu dropdown-menu-right">
                         <a className="dropdown-item" href="profile.html">My Profile</a>
