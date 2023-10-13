@@ -8,15 +8,15 @@ const SideBar = ({active}) => {
                     <div id="sidebar-menu" className="sidebar-menu">
                         <ul>
                             <li>
-                                <a href="index.html" className={active === "Dashboard" ? "active" : ""}><img src="assets/img/icons/dashboard.svg" alt="img" /><span>
+                                <a href="/home" className={active === "Dashboard" ? "active" : ""}><img src="assets/img/icons/dashboard.svg" alt="img" /><span>
                                     Dashboard</span> </a>
                             </li>
                             <li className="submenu">
                                 <a href="javascript:void(0);"><img src="assets/img/icons/purchase1.svg" alt="img" /><span>
                                     Complaint</span> <span className="menu-arrow"></span></a>
                                 <ul>
-                                    <li><a href="saleslist.html" className={active === "LComplaint" ? "active" : ""}>Complaint List</a></li>
-                                    <li><a href="pos.html" className={active === "VComplaint" ? "active" : ""}>View Complaint</a></li>
+                                    <li><a href="/complaint" className={active === "LComplaint" ? "active" : ""}>Complaint List</a></li>
+                                    <li><a href="/complaint-details" className={active === "VComplaint" ? "active" : ""}>View Complaint</a></li>
                                 </ul>
                             </li>
                             <li className="submenu">
@@ -31,8 +31,8 @@ const SideBar = ({active}) => {
                                 <a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img" /><span>
                                     Users</span> <span className="menu-arrow"></span></a>
                                 <ul>
-                                    <li><a href="newuser.html" className={active === "NUser" ? "active" : ""}>New User </a></li>
-                                    <li><a href="userlist.html" className={active === "LUser" ? "active" : ""}>Users List</a></li>
+                                    <li><a href="/new-user" className={active === "NUser" ? "active" : ""}>New User </a></li>
+                                    <li><a href="/user" className={active === "LUser" ? "active" : ""}>Users List</a></li>
                                 </ul>
                             </li>
                             <li className="submenu">
