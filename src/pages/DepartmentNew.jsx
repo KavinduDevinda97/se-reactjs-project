@@ -2,15 +2,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
-const NewUser = () => {
+const DepartmentNew = () => {
   return (
     <>
       <div className="page-wrapper">
         <div className="content">
           <div className="page-header">
             <div className="page-title">
-              <h4>User Management</h4>
-              <h6>Add/Update User</h6>
+              <h4>Department</h4>
+              <h6>Add/Update Department</h6>
             </div>
           </div>
 
@@ -19,42 +19,40 @@ const NewUser = () => {
               <div className="row">
                 <div className="col-lg-3 col-sm-6 col-12">
                   <div className="form-group">
-                    <label>User Name</label>
+                    <label>Department Name</label>
                     <input type="text" />
-                  </div>
-                  <div className="form-group">
-                    <label>Email</label>
-                    <input type="text" />
-                  </div>
-                  <div className="form-group">
-                    <label>Password</label>
-                    <div className="pass-group">
-                      <input type="password" className=" pass-input" />
-                      <span className="fas toggle-password fa-eye-slash"></span>
-                    </div>
                   </div>
                 </div>
                 <div className="col-lg-3 col-sm-6 col-12">
                   <div className="form-group">
-                    <label>Mobile</label>
+                    <label>Description</label>
                     <input type="text" />
                   </div>
+                </div>
+                <div className="col-lg-3 col-sm-6 col-12">
                   <div className="form-group">
                     <label>Role</label>
                     <select className="form-select">
-                      <option>Select</option>
-                      <option>Role</option>
-                      <option>Role1</option>
+                      <option>Select Role</option>
+                      <option>Ploce Station</option>
+                      <option>AG Office</option>
+                      <option>Gramasewa Office</option>
                     </select>
                   </div>
+                </div>
+                <div className="col-lg-3 col-sm-6 col-12">
                   <div className="form-group">
-                    <label>Confirm Password</label>
-                    <div className="pass-group">
-                      <input type="password" className=" pass-inputs" />
-                      <span className="fas toggle-passworda fa-eye-slash"></span>
-                    </div>
+                    <label>Location</label>
+                    <input type="text" />
                   </div>
                 </div>
+                <div className="col-lg-3 col-sm-6 col-12">
+                  <div className="form-group">
+                    <label>Contact Information</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                
                 <div className="col-lg-12">
                   <a href="javascript:void(0);" className="btn btn-submit me-2">
                     Submit
@@ -72,4 +70,4 @@ const NewUser = () => {
   );
 };
 
-export default NewUser;
+export default DepartmentNew;
